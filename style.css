@@ -4,27 +4,29 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+
+/* Header */
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header__img {
   width: 100%;
 }
-.aaa .more_inf {
+.more_info__link {
   font-family: fantasy, cursive;
 }
-
 @media (max-width:768px) {
 
-  .aaa { 
+  .header { 
     text-align: center;
   }
 
 }
-.centered-main-page-element {
+
+.wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -34,12 +36,12 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 li, 
 h3 {
@@ -49,20 +51,21 @@ input,
 button {
   outline: none;
 }
-button {
+.button {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
-h3 {
+.heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -122,12 +125,12 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
-button.delete img {
+.button_delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button_delete__img:hover {
   transform: rotateZ(0);
 }
 
@@ -142,11 +145,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.editMode input[type="text"] {
+ul li.edit__mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.edit__mode label {
   display: none;
 }
